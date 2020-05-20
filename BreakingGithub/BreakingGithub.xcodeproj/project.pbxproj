@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		DB25F69A2475DD3900F3B4FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB25F6992475DD3900F3B4FB /* AppDelegate.swift */; };
 		DB25F69C2475DD3900F3B4FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB25F69B2475DD3900F3B4FB /* SceneDelegate.swift */; };
-		DB25F69E2475DD3900F3B4FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB25F69D2475DD3900F3B4FB /* ViewController.swift */; };
 		DB25F6A12475DD3900F3B4FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB25F69F2475DD3900F3B4FB /* Main.storyboard */; };
 		DB25F6A32475DD3A00F3B4FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB25F6A22475DD3A00F3B4FB /* Assets.xcassets */; };
 		DB25F6A62475DD3A00F3B4FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB25F6A42475DD3A00F3B4FB /* LaunchScreen.storyboard */; };
+		DB25F6AE2475E20400F3B4FB /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB25F6AD2475E20400F3B4FB /* ModelController.swift */; };
+		DB25F6B12475E2AC00F3B4FB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB25F6B02475E2AC00F3B4FB /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DB25F6962475DD3900F3B4FB /* BreakingGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB25F6992475DD3900F3B4FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB25F69B2475DD3900F3B4FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB25F69D2475DD3900F3B4FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DB25F6A02475DD3900F3B4FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB25F6A22475DD3A00F3B4FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB25F6A52475DD3A00F3B4FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB25F6A72475DD3A00F3B4FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB25F6AD2475E20400F3B4FB /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		DB25F6B02475E2AC00F3B4FB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		DB25F6982475DD3900F3B4FB /* BreakingGithub */ = {
 			isa = PBXGroup;
 			children = (
+				DB25F6AF2475E28900F3B4FB /* ViewControllers */,
 				DB25F6992475DD3900F3B4FB /* AppDelegate.swift */,
 				DB25F69B2475DD3900F3B4FB /* SceneDelegate.swift */,
-				DB25F69D2475DD3900F3B4FB /* ViewController.swift */,
 				DB25F69F2475DD3900F3B4FB /* Main.storyboard */,
+				DB25F6B32475E2BE00F3B4FB /* Resources */,
+				DB25F6AD2475E20400F3B4FB /* ModelController.swift */,
+			);
+			path = BreakingGithub;
+			sourceTree = "<group>";
+		};
+		DB25F6AF2475E28900F3B4FB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB25F6B02475E2AC00F3B4FB /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DB25F6B32475E2BE00F3B4FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				DB25F6A22475DD3A00F3B4FB /* Assets.xcassets */,
 				DB25F6A42475DD3A00F3B4FB /* LaunchScreen.storyboard */,
 				DB25F6A72475DD3A00F3B4FB /* Info.plist */,
 			);
-			path = BreakingGithub;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB25F69E2475DD3900F3B4FB /* ViewController.swift in Sources */,
+				DB25F6AE2475E20400F3B4FB /* ModelController.swift in Sources */,
 				DB25F69A2475DD3900F3B4FB /* AppDelegate.swift in Sources */,
 				DB25F69C2475DD3900F3B4FB /* SceneDelegate.swift in Sources */,
+				DB25F6B12475E2AC00F3B4FB /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
